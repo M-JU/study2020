@@ -1,0 +1,202 @@
+body {margin: 0}
+a {
+  text-decoration:none;
+  color:#3C4146;
+}
+a:hover {
+  color:#4374D9;
+}
+
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, .75);
+    background: #fff;
+    height: 78px;
+    width: 100vw;
+}
+.section {position:relative;}
+.section .inner {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+header .mainmenu {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.menulogo {margin: 10px;}
+.menulogo img:last-child{display:none}
+.menulogo:hover img:first-child{display:none}
+.menulogo:hover img:last-child{display:inline-table;}
+
+.mainmenu ul {
+  padding: 0;
+}
+.mainmenu ul li {
+  list-style: none;
+  padding: 10px;
+  float: left;
+}
+
+header .submenu {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  float: right;
+  margin: 10px;
+}
+
+.submenu ul {
+  padding: 0;
+  margin-right: 10px;
+}
+.submenu ul li {
+  list-style: none;
+  padding: 8px;
+  float: right;
+}
+
+#search {
+    width: 160px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+input::-webkit-input-placeholder { color: #ddd; }
+.input--text {
+    height: 34px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
+}
+.input--text:focus {
+  box-shadow: 0 0 5px rgba(67, 116, 217, 1);
+  border: 1px solid rgba(67, 116, 217, 1);
+}
+
+.btn-group {
+    order: 2;
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px;
+}
+.btn-group .sign-in {
+  margin-right: 4px;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+    background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+.btn:hover {
+  text-decoration:none;
+  color:#3C4146;
+  background: linear-gradient(to bottom, rgba(221,221,221,0.7), rgba(204,204,204,0.7));
+}
+
+.section--visual {
+  position: relative;
+  background-image: url(https://heropcode.github.io/GitHub-Responsive/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+}
+.section--visual::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .3);
+}
+.section--visual .inner {
+  max-width: 980px;
+  padding: 140px 0;
+  margin: 0 125px;
+  display: flex;
+}
+.section--visual .summary {
+  flex: 1;
+  margin-right: 90px;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 1px 25px rgba(0, 0, 0, .75);
+  z-index: 1;
+}
+.section--visual .summary__title {
+  font-weight: normal;
+  font-size: 54px;
+  margin-bottom: 18px;
+}
+.section--visual .summary__description {
+  font-weight:lighter;
+  font-size: 26px;
+}
+
+#sign-form {
+  width: 340px;
+  margin-top: 16px;
+  z-index: 1;
+}
+#sign-form .input--text {
+  box-sizing: border-box;
+  height: 40px;
+  width: 340px;
+}
+#sign-form ul {
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: auto;
+  border: 1px;
+  padding: 0;
+}
+#sign-form ul li{
+  list-style: none;
+  margin-bottom: 16px;
+}
+#sign-form .caption {
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, .6);
+    line-height: 1.5;
+    text-align: center;
+}
+#sign-form .btn {
+  text-align:center;
+  justify-content: center;
+  line-height: 70px;
+  height: 70px;
+  width: 340px;
+  font-size: 20px;
+  background: linear-gradient(to bottom, #B8E2A3, #42A341);
+  border: 0;
+}
+
+#sign-form .btn:hover {
+  background: linear-gradient(to bottom, #42A341, #074C00);
+  border: 0;
+  color: white;
+}
